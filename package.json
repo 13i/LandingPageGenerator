@@ -1,0 +1,23 @@
+{
+  "name": "landing-page-generator",
+  "version": "1.0.0",
+  "description": "Generate static landing pages based on js configuration files with grunt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13i/LandingPageGenerator.git"
+  },
+  "author": "13i",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/13i/LandingPageGenerator/issues"
+  },
+  "homepage": "https://github.com/13i/LandingPageGenerator#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "load-grunt-config": "^0.19.2"
+  }
+}
