@@ -5,7 +5,7 @@ module.exports = function (grunt) {
   require('load-grunt-config')(grunt, {
     data: {
       pkg: grunt.file.readJSON('package.json'),
-      config: grunt.file.readJSON('config.json'),
+      config: require('./config'),
       distPath: 'dist',
       devPath: 'dev'
     }

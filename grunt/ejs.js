@@ -9,9 +9,7 @@ module.exports = function (grunt, options) {
       dest: '<%= devPath %>/',
       expand: true,
       ext: '.html',
-      options: {
-        config: grunt.config
-      }
+      options: options
     }
   }
 }

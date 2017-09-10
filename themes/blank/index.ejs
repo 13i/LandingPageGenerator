@@ -3,13 +3,16 @@
 <head>
 
 <meta charset="utf-8" />
-<title>Blank theme</title>
 
 <% if( config.meta ) { %>
-    <% for (let name in config.meta) { %>
-        <% if (config.meta[name]) { %>
-            <meta name="<%= name %>" content="<%= config.meta[name] %>" />
-        <% } %>
+    <% if( config.meta.title ) { %>
+        <title><%= config.meta.title %></title>
+    <% } %>
+    <% if( config.meta.description ) { %>
+        <meta name="description" content="<%= config.meta.description %>" />
+    <% } %>
+    <% if( config.meta.keywords ) { %>
+        <meta name="keywords" content="<%= config.meta.keywords %>" />
     <% } %>
 <% } %>
 
@@ -19,7 +22,10 @@
 </head>
 <body>
 
+<h1>config.json</h1>
+<pre><code><%= JSON.stringify(config, null, "\t") %></code></pre>
+
 <script src="assets/js/layout.js"></script>
-    
+
 </body>
 </html>
