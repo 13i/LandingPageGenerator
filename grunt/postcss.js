@@ -16,7 +16,7 @@ module.exports = function (grunt, options) {
           })
         ]
       },
-      src: '<%= devPath %>/assets/css/layout.css',
+      src: '<%= devPath %>/assets/css/layout-sass.css',
       dest: '<%= devPath %>/assets/css/layout.css'
     },
     dist: {
@@ -35,7 +35,7 @@ module.exports = function (grunt, options) {
           require('cssnano')()
         ]
       },
-      src: '<%= devPath %>/assets/css/layout.purified.css',
+      src: '<%= devPath %>/assets/css/layout-purified.css',
       dest: '<%= distPath %>/assets/css/layout.css'
     }
   }

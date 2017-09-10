@@ -3,10 +3,15 @@ module.exports = function (grunt, options) {
     options: {
       baseUrl: '/'
     },
-    cwd: 'themes/<%= config.theme %>/',
-    src: ['**/*.ejs', '!partials/**/*'],
-    dest: '<%= devPath %>/',
-    expand: true,
-    ext: '.html'
+    ejs: {
+      cwd: 'themes/<%= config.theme %>/',
+      src: ['**/*.ejs', '!partials/**/*'],
+      dest: '<%= devPath %>/',
+      expand: true,
+      ext: '.html',
+      options: {
+        config: grunt.config
+      }
+    }
   }
 }

@@ -7,8 +7,10 @@ module.exports = function (grunt, options) {
         'themes/<%= config.theme %>/assets/css/'
       ]
     },
-    files: {
-      '<%= devPath %>/assets/css/layout.css': 'themes/<%= config.theme %>/assets/css/layout.scss'
+    sass: {
+      files: {
+        '<%= devPath %>/assets/css/layout-sass.css': 'themes/<%= config.theme %>/assets/css/layout.scss'
+      }
     }
   }
 }
