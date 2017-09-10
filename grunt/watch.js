@@ -2,22 +2,22 @@ module.exports = function (grunt, options) {
   return {
     html: {
       options: { livereload: true },
-      files: ['<%= devPath %>/**/*.ejs'],
-      tasks: ['ejs:dist']
+      files: ['themes/<%= config.theme %>/**/*.ejs'],
+      tasks: ['ejs']
     },
     js: {
       options: { livereload: true },
-      files: ['<%= devPath %>/assets/js/**/*.js'],
-      tasks: ['concat:dist']
+      files: ['themes/<%= config.theme %>/assets/js/**/*.js'],
+      tasks: ['concat']
     },
     css: {
       options: { livereload: true },
-      files: ['<%= devPath %>/assets/css/**/*'],
-      tasks: ['sass:dist', 'postcss:dev']
+      files: ['themes/<%= config.theme %>/assets/css/**/*'],
+      tasks: ['sass', 'postcss:dev']
     },
     img: {
       options: { livereload: true },
-      files: ['<%= devPath %>/assets/img/**'],
+      files: ['themes/<%= config.theme %>/assets/img/**'],
       tasks: ['newer:copy:dev']
     }
   }

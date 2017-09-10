@@ -16,7 +16,7 @@ module.exports = function (grunt) {
     'clean:dev',
     'ejs',
     'concat',
-    'sass:dist',
+    'sass',
     'postcss:dev',
     'copy:dev',
     'connect:dev',
@@ -25,17 +25,16 @@ module.exports = function (grunt) {
 
   // Dist task
   grunt.registerTask('dist', [
-    'clean:dev',
-    'clean:dist',
+    'clean',
     'ejs',
-    'htmlmin:dist',
+    'htmlmin',
     'concat',
-    'uglify:dist',
-    'sass:dist',
+    'uglify',
+    'sass',
     'purifycss',
     'postcss:dist',
     'copy:dist',
-    'imagemin:dist',
+    'imagemin',
     'clean:dev',
     'connect:dist'
   ])

@@ -4,7 +4,7 @@ module.exports = function (grunt, options) {
       options: {
         port: 9000,
         hostname: '*',
-        base: '<%= tmpPath %>',
+        base: '<%= devPath %>',
         livereload: true,
         open: true
       }

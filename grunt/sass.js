@@ -4,13 +4,11 @@ module.exports = function (grunt, options) {
       sourceMap: true,
       includePaths: [
         '.',
-        '<%= devPath %>/assets/css/'
+        'themes/<%= config.theme %>/assets/css/'
       ]
     },
-    dist: {
-      files: {
-        '<%= tmpPath %>/assets/css/layout.css': '<%= devPath %>/assets/css/layout.scss'
-      }
+    files: {
+      '<%= devPath %>/assets/css/layout.css': 'themes/<%= config.theme %>/assets/css/layout.scss'
     }
   }
 }
