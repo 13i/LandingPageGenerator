@@ -1,9 +1,5 @@
-# dist directory
-dist/Release
-
-# Dependency directories
+dev/
+dist/
 node_modules/
-
-# tmp files
-.tmp/
+config.js
 
