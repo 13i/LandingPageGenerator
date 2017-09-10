@@ -4,11 +4,13 @@ module.exports = function (grunt, options) {
       removeComments: true,
       collapseWhitespace: true
     },
-    files: [{
-      expand: true,
-      cwd: '<%= devPath %>',
-      src: '**/*.html',
-      dest: '<%= distPath %>'
-    }]
+    htmlmin: {
+      files: [{
+        expand: true,
+        cwd: '<%= devPath %>',
+        src: '**/*.html',
+        dest: '<%= distPath %>'
+      }]
+    }
   }
 }

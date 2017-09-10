@@ -1,5 +1,10 @@
 module.exports = function (grunt, options) {
   return {
+    config: {
+      options: { livereload: true },
+      files: ['config.json'],
+      tasks: ['ejs', 'concat', 'sass', 'postcss:dev', 'newer:copy:dev']
+    },
     html: {
       options: { livereload: true },
       files: ['themes/<%= config.theme %>/**/*.ejs'],
