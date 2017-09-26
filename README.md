@@ -2,10 +2,10 @@
 Create landing pages based on templates and configuration files
 
 # Usage
-Rename `config.json.default` in `config.json` and edit the file to suit your needs
+Edit `config.js`
 
 # Dev
-Edit `config.js` and run `grunt`
+Run `grunt`
 
 # Build
 Run `grunt dist`
