@@ -11,6 +11,12 @@ module.exports = function (grunt) {
     }
   })
 
+  // Reload config
+  grunt.registerTask('config', function () {
+    var config = require('./config')
+    grunt.config.merge(config)
+  })
+
   // Default task.
   grunt.registerTask('default', [
     'clean:dev',
