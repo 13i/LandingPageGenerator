@@ -1,6 +1,5 @@
-
 var config = {}
 
-config.theme = 'blank'
+config.theme = 'bower'
 
 module.exports = config

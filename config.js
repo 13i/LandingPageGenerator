@@ -1,8 +1,11 @@
+
+var merge = require('merge-recursive')
+
 /**
  * Theme :
  * Indicate here the theme you will use
  */
-var theme = 'blank'
+var theme = 'bower'
 
 /**
  * Config :
@@ -11,9 +14,8 @@ var theme = 'blank'
  * - ./themes/YOUR_THEME/config.js
  * Have a look at these files to know what is configurable in your page
  */
-var config = require('merge-recursive')(
+var config = merge(
     require('./defaults'),
-    { 'theme': theme },
     require('./themes/' + theme + '/config')
 )
 

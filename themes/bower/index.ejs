@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8" />
+
+<% if( config.meta ) { %>
+    <% if( config.meta.title ) { %>
+        <title><%= config.meta.title %></title>
+    <% } %>
+    <% if( config.meta.description ) { %>
+        <meta name="description" content="<%= config.meta.description %>" />
+    <% } %>
+    <% if( config.meta.keywords ) { %>
+        <meta name="keywords" content="<%= config.meta.keywords %>" />
+    <% } %>
+<% } %>
+
+<link rel="stylesheet" type="text/css" href="assets/css/layout.css" />
+<script src="assets/js/header.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="logo">
+        <img src="assets/img/bower-logo.png" class="responsive" />
+    </div>
+    <h1>config.json</h1>
+    <pre><code><%= JSON.stringify(config, null, "\t") %></code></pre>
+</div>
+
+<script src="assets/js/layout.js"></script>
+
+</body>
+</html>

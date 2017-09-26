@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    &.responsive {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    margin: 0 auto;
+}
